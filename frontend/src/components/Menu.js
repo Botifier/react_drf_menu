@@ -2,7 +2,12 @@ import React from 'react';
 import './Menu.css';
 import MenuItem from './MenuItem';
 import MenuHeaders from './MenuHeaders'
+import {connect} from 'react-redux';
 
+const mapStateToProps = state => {
+    console.log('new state: ', state)
+    return state
+  };
 
 const Menu = ({ menu }) =>
     <table>
@@ -19,4 +24,7 @@ const Menu = ({ menu }) =>
     </table>
 
 
-export default Menu
+export default connect(
+    mapStateToProps,
+    null
+  )(Menu);
