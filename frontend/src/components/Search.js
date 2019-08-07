@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { searchItems } from '../actions/menu';
+import { searchItems, getMenu } from '../actions/menu';
 import './Search.css';
 
 
@@ -11,7 +11,11 @@ class SearchForm extends Component {
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
-  
+
+    componentDidMount() {
+      this.props.getMenu();
+    }
+
     handleSubmit(event) {
       if (this.state.value) {
         this.props.searchItems(this.state.value);
@@ -35,5 +39,5 @@ class SearchForm extends Component {
 
   export default connect(
     null,
-    { searchItems }
+    { searchItems, getMenu }
   )(SearchForm);

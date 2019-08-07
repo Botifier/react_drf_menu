@@ -1,37 +1,15 @@
-import { SEARCH_ITEMS, SORT_ITEMS_BY_NAME, SORT_ITEMS_BY_PRICE} from '../constants/actionTypes';
+import { SEARCH_ITEMS, SORT_ITEMS_BY_NAME, SORT_ITEMS_BY_PRICE, FETCH_ALL} from '../constants/actionTypes';
 
-
-const INITIAL_STATE = [
-    {
-        id: 0,
-        name: 'mached potatoes',
-        price: 4,
-    },
-    {
-        id: 1,
-        name: 'fried chicken',
-        price: 4,
-    }, 
-    {
-        id: 2,
-        name: 'grilled chicken',
-        price: 5,
-    }, 
-    {
-        id: 3,
-        name: 'grilled beef',
-        price: 8,
-    },
-];
 
 const all_items = (state, action) =>
   action.items;
   
-function menuReducer(state=INITIAL_STATE, action) {
+function menuReducer(state=[], action) {
     switch(action.type) {
         case SEARCH_ITEMS :
         case SORT_ITEMS_BY_NAME:
-        case SORT_ITEMS_BY_PRICE: {
+        case SORT_ITEMS_BY_PRICE: 
+        case FETCH_ALL: {
             return all_items(state, action);
             }
         default : return state;
