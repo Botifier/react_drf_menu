@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-
+import { connect } from 'react-redux';
+import { searchItems } from '../actions/menu';
 import './Search.css';
 
 
@@ -13,7 +14,7 @@ class SearchForm extends Component {
   
     handleSubmit(event) {
       if (this.state.value) {
-        alert(this.state.value);
+        this.props.searchItems(this.state.value);
       }
       event.preventDefault();
     }
@@ -32,4 +33,7 @@ class SearchForm extends Component {
     }
   }
 
-  export default SearchForm;
+  export default connect(
+    null,
+    { searchItems }
+  )(SearchForm);

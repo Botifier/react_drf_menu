@@ -5,7 +5,6 @@ import MenuHeaders from './MenuHeaders'
 import {connect} from 'react-redux';
 
 const mapStateToProps = state => {
-    console.log('new state: ', state)
     return state
   };
 

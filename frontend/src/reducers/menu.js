@@ -1,3 +1,6 @@
+import { SEARCH_ITEMS} from '../constants/actionTypes';
+
+
 const INITIAL_STATE = [
     {
         id: 0,
@@ -21,9 +24,14 @@ const INITIAL_STATE = [
     },
 ];
 
-
+const all_items = (state, action) =>
+  action.items;
+  
 function menuReducer(state=INITIAL_STATE, action) {
     switch(action.type) {
+        case SEARCH_ITEMS :{
+            return all_items(state, action);
+            }
         default : return state;
     }
   }
