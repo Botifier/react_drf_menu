@@ -8,7 +8,7 @@ const mapStateToProps = state => {
     return state
   };
 
-const Menu = ({ menu }) =>
+export const Menu = ({ menu }) =>
     <table>
         <tbody>
             <MenuHeaders />

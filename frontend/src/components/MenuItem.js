@@ -10,7 +10,7 @@ const MenuItem = ({ menuItem }) => {
   return (
     <Fragment>
         <td>{name}</td>
-        <td>{price}€</td>
+        <td className='price'>{price}€</td>
     </Fragment>
   );
 }
