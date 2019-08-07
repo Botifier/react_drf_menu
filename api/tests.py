@@ -40,3 +40,18 @@ class MenuViewTest(APITestCase):
         self.assertEqual(len(response.data), self.TOTAL_ENTRIES / 2)
         for element in response.data:
             self.assertEqual(element['name'], 'name1')
+
+    def test_sorting(self):
+        data = {
+            'ordering': '+name,-price'
+        }
+        response = self.client.get(self.API_URL, data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), self.TOTAL_ENTRIES)
+
+        expected = {
+            'name': self.TEST_DATA['names'][0],
+            'price': self.TEST_DATA['prices'][-1],
+        }
+        self.assertEqual(response.data[0]['name'], expected['name']) 
+        self.assertEqual(response.data[0]['price'], expected['price']) 
