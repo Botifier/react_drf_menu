@@ -17,7 +17,8 @@ cd into the frontend directory and then start with installing dependencies: <br/
 ``` npm install ```
 <br/> Serving the frontend: <br/>
 ``` npm start ```
-
+<br/>
+and then navigate to http://localhost:3000/
 ## Testing
 To Run the backend tests:<br/>
 ``` python manage.py test ```
