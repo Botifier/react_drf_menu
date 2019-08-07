@@ -20,6 +20,7 @@ class SearchForm extends Component {
       if (this.state.value) {
         this.props.searchItems(this.state.value);
       }
+      this.setState({value: ''});
       event.preventDefault();
     }
 
