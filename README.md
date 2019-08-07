@@ -1,0 +1,33 @@
+## How to start
+There is two seperate apps for both the frontend and the backend. <br/>
+### The backend
+To setup the backend you need python3 and pip and then run the following: 
+<br/>
+``` pip install -r requirements.txt ```
+<br/>
+Create the db:
+<br/>
+``` python manage.py migrate ```
+<br/>Run the server: <br/>
+``` python manage.py runserver ```
+<br/>The api will run on http://localhost:8000/api/menu/ <br/>
+### The frontend
+For the frontend app, npm v6.9.0 and node v10.16.0 were used. <br />
+cd into the frontend directory and then start with installing dependencies: <br/>
+``` npm install ```
+<br/> Serving the frontend: <br/>
+``` npm start ```
+
+## Testing
+To Run the backend tests:<br/>
+``` python manage.py test ```
+<br/>
+To run the frontend tests:<br/>
+``` npm test ```
+
+## TODO
+* Add docker-compose for an easier setup/reusability
+* Add more tests for the frontend components
+* Seperate config for production and development for the django backend.
+
+
