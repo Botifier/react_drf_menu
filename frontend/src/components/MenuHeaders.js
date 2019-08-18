@@ -4,7 +4,7 @@ import { sortItemsByName, sortItemsByPrice } from '../actions/menu';
 
 import './MenuHeaders.css';
 
-class MenuHeaders extends Component {
+export class MenuHeaders extends Component {
     constructor(props) {
       super(props);
       this.state = {

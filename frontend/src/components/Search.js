@@ -4,7 +4,7 @@ import { searchItems, getMenu } from '../actions/menu';
 import './Search.css';
 
 
-class SearchForm extends Component {
+export class SearchForm extends Component {
     constructor(props) {
       super(props);
       this.state = {value: ''};
