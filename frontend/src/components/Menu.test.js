@@ -1,9 +1,7 @@
 import React from 'react';
 import { Menu } from './Menu';
-import Adapter from 'enzyme-adapter-react-16';
-import Enzyme , { shallow, mount } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 
-Enzyme.configure({adapter: new Adapter()});
 
 describe('Menu Component', () => {
   const menu = [
