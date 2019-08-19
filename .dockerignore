@@ -1,0 +1,6 @@
+.env
+frontend
+.vscode
+README.md
+.git
+db.sqlite3
