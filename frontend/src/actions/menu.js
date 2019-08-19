@@ -2,7 +2,7 @@ import axios from 'axios';
 import { SEARCH_ITEMS, SORT_ITEMS_BY_NAME, SORT_ITEMS_BY_PRICE, FETCH_ALL} from '../constants/actionTypes';
 
 
-const apiUrl = 'http://localhost:8000/api/menu/';
+const apiUrl = '/api/menu/';
 
 
 export const searchItemsSuccess = (items) => {
