@@ -27,8 +27,8 @@ To run the frontend tests:<br/>
 ``` npm test ```
 
 ## TODO
-* Add docker-compose for an easier setup/reusability
-* Add more tests for the frontend components
-* Seperate config for production and development for the django backend.
+- [x] Add docker-compose for an easier setup/reusability 
+- [x] Add more tests for the frontend components 
+- [ ] Seperate config for production and development for the django backend.
 
 
