@@ -1,9 +1,5 @@
-## [Cirrus CI][cirrus-ci-url]
 [![Cirrus CI Build Status][cirrus-ci-badge]][cirrus-ci]
 
-The configuration is in [.cirrus.yml].
-
-[cirrus-ci-url]: https://cirrus-ci.org/
 [cirrus-ci]: https://cirrus-ci.com/github/botifier/react_drf_menu
 [cirrus-ci-badge]: https://api.cirrus-ci.com/github/botifier/react_drf_menu.svg
 [.cirrus.yml]: https://github.com/botifier/react_drf_menu/blob/master/.cirrus.yml
