@@ -1,0 +1,9 @@
+backend_tests:
+  container:
+    dockerfile: backend/Dockerfile
+  test_script: python manage.py test
+
+frontend_tests:
+  container:
+    dockerfile: frontend/Dockerfile
+  test_script: npm test
