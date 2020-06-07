@@ -30,5 +30,5 @@ To run the frontend tests:<br/>
 - [x] Add docker-compose for an easier setup/reusability 
 - [x] Add more tests for the frontend components 
 - [ ] Seperate config for production and development for the django backend.
-
+- [] Add ci
 
