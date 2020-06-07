@@ -1,0 +1,5 @@
+backend_tests:
+  container:
+    dockerfile: backend/Dockerfile
+  test_script: python manage.py test
+
