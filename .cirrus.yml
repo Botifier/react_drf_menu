@@ -1,5 +1,6 @@
-backend_tests:
-  container:
-    dockerfile: backend/Dockerfile
+container:
+  dockerfile: backend/Dockerfile
+
+backend_container_test_task:
   test_script: python manage.py test
 
